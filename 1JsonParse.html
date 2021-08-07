@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSON 1-Parse</title>
+</head>
+
+<body>
+    <h2>Creating an Object from a JSON String</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const txt = '{"name":"John", "age":30, "city":"New York"}' //Declare JSON object.
+        const obj = JSON.parse(txt); // to convert text into a JavaScript object .
+        document.getElementById("demo").innerHTML = "Name: " + obj.name + ", Age: " + obj.age + ", City: " + obj.city;
+    </script>
+
+</body>
+
+</html>
